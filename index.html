@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima En Córdoba</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Información del Clima en Córdoba</h1>
+        <div class="row mt-3">
+            <div class="col-md-6 offset-md-3">
+                <label for="municipioSelect" class="form-label">Seleccione un municipio:</label>
+                <select id="municipioSelect" class="form-select mb-3">
+                    <option value="" disabled selected>Seleccione un municipio</option>
+                    <option value="Ayapel">Ayapel</option>
+                    <option value="Buenavista">Buenavista</option>
+                    <option value="Canalete">Canalete</option>
+                    <option value="Cerete">Cereté</option>
+                    <option value="Chimá">Chimá</option>
+                    <option value="Chinú">Chinú</option>
+                    <option value="Ciénaga de oro">Ciénaga de oro</option>
+                    <option value="Cotorra">Cotorra</option>
+                    <option value="La apartada">La apartada</option>
+                    <option value="Lorica">Lorica</option>
+                    <option value="Los córdobas">Los córdobas</option>
+                    <option value="Momil">Momil</option>
+                    <option value="Montelíbano">Montelíbano</option>
+                    <option value="Montería">Montería</option>
+                    <option value="Moñitos">Moñitos</option>
+                    <option value="Planteta rica">Planeta rica</option>
+                    <option value="Pueblo nuevo">Pueblo nuevo</option>
+                    <option value="Puerto escondido">Puerto escondido</option>
+                    <option value="Puerto Libertador">Puerto Libertador</option>
+                    <option value="Purísima">Purísima</option>
+                    <option value="Sahagún">Sahagún</option>
+                    <option value="San andrés de sotavento">San andrés de sotavento</option>
+                    <option value="San antero">San antero</option>
+                    <option value="San bernando del viento">San bernando del viento</option>
+                    <option value="San carlos">San carlos</option>
+                    <option value="San josé de ure">San josé de ure</option>
+                    <option value="San pelayo">San pelayo</option>
+                    <option value="Tierralta">Tierralta</option>
+                    <option value="Tuchín">Tuchín</option>
+                    <option value="Valencia">Valencia</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="clima-info" class="mt-5"></div>
+            </div>
+            <div class="col-md-6">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/mapa.js"></script>
+</body>
+
+</html>
